@@ -1,62 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #D6E2F0;
+    background-color: hsl(212, 45%, 89%);
+    display: grid;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400 700;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.main{
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    width: 21rem;
+    height: 32rem;
     text-align: center;
+}
+
+.qr-img{
+    border-radius: 15px;
     position: relative;
-    height: 100vh;
+    width: 19rem;
+    margin: 16px;
+    bottom: 6px;
+
 }
 
-div{
-    background-color: #fff;
-    border-radius: 20px;
-    display: block;
-    width: 330px;
-    height: auto;
-    padding-bottom: 30px;
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-}
-img{
-    border-radius: 20px;
-    width: 300px;
-    height: 300px;
-    margin: 15px;
-}
-h3{
+.card-title{
     color: hsl(218, 44%, 22%);
-    display: inline-block;
-    font-size: 30px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    font-size: 23px;
-    left: 12px;
-    margin-top: -2px;
-    width: 90%;
-    
+    max-width: 18rem;
 }
 
-p{
+.card-subtitle{
     color: hsl(220, 15%, 55%);
-    display: inline-block;
     font-size: 15px;
-    font-family: "Outfit", sans-serif;
-    left: 12px;
-    margin-top: -4px;
-    width: 80%;
+    max-width: 16rem;
+    margin: 23px;
+    position: relative;
+    bottom: 10px;
 }
-
-@media only screen and (max-width: 375px) {
-    div {
-        background-color: #fff;
-        border-radius: 20px;
-        display: block;
-        width: 330px;
-        height: auto;
-        padding-bottom: 30px;
-        position: absolute;
-        left: 187px;;
-        top: 187px;;
-        transform: translate(-50%, -50%);
-    }
-  }
